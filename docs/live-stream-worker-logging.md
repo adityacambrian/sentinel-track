@@ -45,6 +45,7 @@ interface PersonResult {
   hands: { left: HandResult | null; right: HandResult | null };
   gestures: GestureResult[];
   box: Box;  // [x, y, width, height]
+  boxRaw?: Box;  // normalized to 0..1
 }
 ```
 
